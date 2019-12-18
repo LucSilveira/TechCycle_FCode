@@ -54,7 +54,7 @@ componentDidMount(){
         return(
             <div>
                 <CabecalhoAdm/>
-                <main>
+                <main className="main_aprovacoes">
                 <section className="titulo_aprovacoes">
                     <h1>Lista de aprovações</h1>
                     <hr/>
