@@ -3,13 +3,13 @@ import CabecalhoUser from '../componentes/CabecalhoUser';
 import Rodape from '../componentes/Rodape';
 import '../assets/css/home.css';
 import {Link} from 'react-router-dom'
-import { parseJwt } from '../services/auth';
+// import { parseJwt } from '../services/auth';
 
 class Home extends Component{
     constructor(props){
       super(props);
       this.state = {
-        idUser : parseJwt().IdUsuario,
+        // idUser : parseJwt().IdUsuario,
         listaAnuncios : [],
         listaComFiltro : [],
         idAnuncio : '',
