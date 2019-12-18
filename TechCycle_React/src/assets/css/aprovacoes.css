@@ -1,13 +1,20 @@
-main{
+/* main{
     
     height: 1000px
-}
+} */
+
+/* main{
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
 
 h1 {
     color: var(--roxo);
     font-weight: 500;
     margin-top: 2.8em;
-    width: 82vw;
+    width: 32vw;
     margin-left: 4.5em;
 }
 
@@ -24,7 +31,7 @@ hr {
 .nav_tabs {
     background-color: #fff;
     position: relative;
-    margin-left: 14em;
+    margin-left: 0em;
     margin-top: 2em;
 }
 

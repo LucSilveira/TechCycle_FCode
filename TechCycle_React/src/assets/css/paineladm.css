@@ -2,6 +2,16 @@
 
 .painel_controle {
     display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+}
+
+main {
+    /* height: 800px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4em;
 }
 
 .perfil_adm {

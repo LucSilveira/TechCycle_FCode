@@ -19,6 +19,7 @@
   margin-top: 1em;
 }
 
+
 .foto_principal hr{
     width: 29vw;
 }
@@ -71,6 +72,14 @@
 .foto_principal {
     margin-left: 3em;
 }
+
+.foto_principal {
+    margin-left: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .fotos_secundarias {
     padding: 1em;
 }
@@ -164,9 +173,12 @@
 .box_avaliacao span{
     color:#FFC84C;
 }
+
 .titulo_comentarios h2 {
-    margin: 1em 0em;
+    margin: 2em 0em;
+    margin-left: 1em;
 }
+
 .box_comentarios {
     border: solid 1px #000;
     border-radius: 1em;
@@ -217,7 +229,7 @@
     margin: 0.5em 0em;
 }
 .comentarios {
-    padding: 0em 7em;
+    padding: 0em 8em;
 }
 .titulo_comentarios {
     margin-top: 5vh;
