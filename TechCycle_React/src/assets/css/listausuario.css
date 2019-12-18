@@ -6,3 +6,21 @@
 .ltdimg img{
     width: 7vw;    
 }
+
+.tabela-de-usuarios{
+    margin-top: 3em;
+}
+
+#tabela-lista thead{
+    background: rgb(243, 243, 243);
+}
+#tabela-lista thead tr th{
+    padding: 0.5em 3em;
+}
+
+#tabela-lista-corpo tr td{
+    height: 5vh;
+    text-align: center;
+}#tabela-lista-corpo tr td img{
+    width: 5vw;
+}

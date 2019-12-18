@@ -142,6 +142,17 @@ class CadastroUsuario extends Component {
                                         placeholder="Digite sua senha" />
                                 </div>
 
+                                <div>
+                                    <label><i className="fas fa-lock"></i>     Informe sua profissão</label>
+                                    <input
+                                        id="senha"
+                                        type="text"
+                                        className="input_box"
+                                        required
+                                        name="profissap"
+                                        placeholder="Informe sua profissão" />
+                                </div>
+
                             </section>
 
 

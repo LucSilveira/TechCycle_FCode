@@ -70,7 +70,7 @@ class ListaUsuario extends Component{
                         <hr></hr>
                     </section>
 
-                    <section>
+                    <section className="tabela-de-usuarios">
                         <table id="tabela-lista">
                             <thead>
                                 <tr>
@@ -101,8 +101,7 @@ class ListaUsuario extends Component{
                                         </tr>
                                     );
                                 }.bind(this))
-                            }
-                                    
+                            }                                    
                             </tbody>
                         </table>
                     </section>
