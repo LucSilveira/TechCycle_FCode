@@ -1,16 +1,7 @@
-/* main{
-    
-    height: 1000px
-} */
 
-/* main{
-    height: 800px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
 
 .main_aprovacoes{
+    height: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;

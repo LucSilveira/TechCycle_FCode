@@ -13,9 +13,9 @@ CREATE TABLE Usuario(
 	tipoUsuario VARCHAR(15)
 );
 -- 1
-INSERT INTO Usuario(loginUsuario, senha, nome, email, foto, departamento, tipoUsuario) VALUES('prflima','1234', 'Paulo Ricardo', 'paulo@gmail.com', 'C://Desktop/fotos/usuarios/loginuserid', 'Tecnologia','Funcionário');
+INSERT INTO Usuario(loginUsuario, senha, nome, email, foto, departamento, tipoUsuario) VALUES('Julius','1234', 'Julius', 'julius@gmail.com', 'julius.jpg', 'Tecnologia','Funcionário');
 --2
-INSERT INTO Usuario(loginUsuario, senha, nome, email, foto, departamento, tipoUsuario) VALUES('admin','admin', 'Administrador', 'admin@admin.com', 'C://Desktop/fotos/usuarios/admin', 'Tecnologia','Administrador');
+INSERT INTO Usuario(loginUsuario, senha, nome, email, foto, departamento, tipoUsuario) VALUES('admin','admin', 'Administrador', 'admin@admin.com', 'testefoto.jpg', 'Tecnologia','Administrador');
 --3
 INSERT INTO Usuario(loginUsuario, senha, nome, email, foto, departamento, tipoUsuario) VALUES('kainan','1234', 'Kainan Barros', 'kainan@gmail.com', 'C://Desktop/fotos/usuarios/loginuserid', 'RH','Funcionário');
 

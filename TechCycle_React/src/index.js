@@ -26,6 +26,7 @@ import CadastroProduto from './pages/CadastroProduto';
 import  ListaUsuario from './pages/ListaUsuario';
 import Aprovacoes from './pages/Aprovacoes';
 
+
 // const PermissaoLogar = ({component : Component}) => (
 //     <Route
 //     render = {props =>
@@ -63,7 +64,6 @@ const Rotas = (
             <Route path="/descricao" component={Descricao}/>
             <Route path="/editarperfil" component={EditarPerfilUsuario}/>
             <Route path="/editarproduto" component={EditarProduto}/>
-            <Route path="/listausuario" component={ListaUsuario}/>
             <Route path="/listainteresse" component={ListaInteresse}/>
             <Route path="/listaproduto" component={ListaProduto}/>
             <Route path="/perfilusuario" component={PerfilUsuario}/>

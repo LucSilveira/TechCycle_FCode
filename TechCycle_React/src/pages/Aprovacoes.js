@@ -78,7 +78,7 @@ componentDidMount(){
                                                         <h3>{interesse.idUsuarioNavigation.nome}</h3>
                                                     </div>
                                                     <div className="li_descricao">
-                                                        <p>demonstrou interesse em uma uma unidade de {/*{interesse.idAnuncioNavigation.idProdutoNavigation.nomeProduto}*/}</p>
+                                                        <p>demonstrou interesse em uma uma unidade de {interesse.idAnuncioNavigation.idProdutoNavigation.nomeProduto}</p>
                                                     </div>
                                                     <div className="li_botao">
                                                         <button className="botao_recusar">Recusar</button>

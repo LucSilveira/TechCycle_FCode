@@ -9,6 +9,7 @@
     width: 15vw;
     margin-top: 1em;
     color: #ff0000;
+    margin-left: -0.5em;
 }
 .home_main h1{
     color: var(--roxo);

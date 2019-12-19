@@ -11,6 +11,13 @@
   margin-top: 2.8em;
   font-size: 1.8em;
 }
+
+.colorido{
+    color: var(--roxo);
+    font-weight: bold;
+}.colorido-borda{
+    border: 1.5px solid var(--roxo) !important;
+}
 .titulo_descricao hr, .titulo_interesses hr{
   background: #707070;
   width: 85vw;

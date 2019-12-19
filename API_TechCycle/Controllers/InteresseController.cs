@@ -61,7 +61,7 @@ namespace API_TechCycle.Controllers
         /// <param name="interesse">Passa um interesse.</param>
         /// <returns>Retorna um interesse.</returns>
 
-        [Authorize]
+        // [Authorize]
         [HttpPost]
         public async Task<ActionResult<Interesse>> Post(Interesse interesse)
         {
@@ -113,7 +113,7 @@ namespace API_TechCycle.Controllers
         /// <param name="id">Passa um id de um interesse.</param>
         /// <returns>Retorna um interesse.</returns>
         
-        [Authorize]
+        // [Authorize]
         [HttpDelete("{id}")]
         public async Task<ActionResult<Interesse>> Delete(int id)
         {

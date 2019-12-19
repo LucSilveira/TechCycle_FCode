@@ -26,7 +26,7 @@ function Cabecalho(){
 
     <nav className="menu" id="principal">
         <div className="foto-perfil">
-            <img src="imagens/FotoPerfil.jpg" alt=""/>
+            <img src={require("../assets/img/testFoto.jpg")} alt=""/>
         </div>
         <ul className="menu-admin">
             <li><Link to={'/paineladm'}>

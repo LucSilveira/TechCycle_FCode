@@ -128,8 +128,8 @@ class CadastroAnuncio extends Component {
                                                         // this.cadastraAnuncio(produto.idProduto)
                                                         this.setState({ produtoSelecionado: produto })
                                                     }}>
-
                                                     <p>{produto.nomeProduto}</p>
+
                                                 </div>
                                             )
                                         })
@@ -251,7 +251,7 @@ class CadastroAnuncio extends Component {
                                         </button>
 
                                         <button className="botao_add_cdu" type="submit">
-                                        <a href="./home">  <i className="fas fa-plus"></i> Adicionar</a>
+                                        <i className="fas fa-plus"></i> Adicionar
                                         </button>
                                     </div>
                                 </section>

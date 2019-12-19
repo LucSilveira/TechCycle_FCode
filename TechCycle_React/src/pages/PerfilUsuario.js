@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CabecalhoAdm from '../componentes/CabecalhoAdm';
+import CabecalhoUser from '../componentes/CabecalhoUser';
 import Rodape from '../componentes/Rodape';
 import '../assets/css/perfilusuario.css';
 import { parseJwt } from '../services/auth';
@@ -36,7 +36,7 @@ class PerfilUsuario extends Component {
     render() {
         return (
             <div>
-                <CabecalhoAdm />
+                <CabecalhoUser />
                 <main className="perfilusuario_main">
                     <h1>Perfil do usuário</h1>
                     <hr></hr>

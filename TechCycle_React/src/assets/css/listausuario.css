@@ -3,12 +3,16 @@
     padding: 0;
 }
 
+
 .ltdimg img{
     width: 7vw;    
 }
 
-<<<<<<< HEAD
 .tabela-de-usuarios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4em;
     margin-top: 3em;
 }
 
@@ -25,5 +29,3 @@
 }#tabela-lista-corpo tr td img{
     width: 5vw;
 }
-=======
->>>>>>> 6412eb77abf5979cf36d6b9da8a3d094c7312448

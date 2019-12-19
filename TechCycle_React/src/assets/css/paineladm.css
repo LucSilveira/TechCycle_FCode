@@ -6,13 +6,6 @@
     margin-top: 1em;
 }
 
-main {
-    /* height: 800px; */
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    margin-bottom: 4em;
-}
 
 .perfil_adm {
     width: 15vw;

@@ -2,7 +2,10 @@ import React, {Component} from 'react';
 import CabecalhoUser from '../componentes/CabecalhoUser';
 import Rodape from '../componentes/Rodape';
 import '../assets/css/home.css';
+import Moment from 'react-moment';
 import {Link} from 'react-router-dom'
+// import moment = require('moment');
+
 // import { parseJwt } from '../services/auth';
 
 class Home extends Component{
@@ -145,7 +148,7 @@ class Home extends Component{
                       </div>
                       <div className="home_texto">
                           <p>{anuncio.idProdutoNavigation.descricao}</p>
-                              <p className="dataExpiracao_home">Data de expiração: {anuncio.dataExpiracao}</p>
+                              <p className="dataExpiracao_home">Data de expiração:<Moment format="DD/MM/YYYY">{anuncio.dataExpiracao}</Moment></p>
                       </div>
                       <div className="home_linha">
                           <button className="home_btn"><Link to={{

@@ -74,6 +74,11 @@
     color: #EF5BA1;
     margin-top: 1em;
 }
+
+.botao a{
+    color: white;
+}
+
 .botao_login{
     display: flex;
     justify-content: center; 

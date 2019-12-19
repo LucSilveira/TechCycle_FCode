@@ -42,7 +42,7 @@ class ListaInteresse extends Component {
         <div>
             <CabecalhoUser />
 
-            <main>
+            <main className="main_li">
             <section className="titulo_interesses">
                 <h1>Lista de Interesses</h1>
                 <hr></hr>
@@ -66,14 +66,14 @@ class ListaInteresse extends Component {
                                                     
                                                     <li className="linha" value="{interesse.idInteresse}">
                                                         <div className="li_imagem">
-                                                            {/* <img src={"http://localhost:5000/Resources/Anuncio/" + interesse.foto} alt="imagem do produto" /> */}
+                                                            <img src={"http://localhost:5000/Resources/Anuncio/" + interesse.idAnuncioNavigation.foto} alt="imagem do produto" />
                                                         </div>
-                                                        {console.log(interesse.foto)}
+                                                        {console.log(interesse.idAnuncioNavigation.foto)}
                                                         <div className="li_titulo">
-                                                            {/* <h3>{interesse.idAnuncioNavigation.idProdutoNavigation.nomeProduto}</h3> */}
+                                                            <h3>{interesse.idAnuncioNavigation.idProdutoNavigation.nomeProduto}</h3>
                                                         </div>
                                                         <div className="li_descricao">
-                                                            {/* <p>{interesse.idAnuncioNavigation.idProdutoNavigation.descricao}</p> */}
+                                                            <p>{interesse.idAnuncioNavigation.idProdutoNavigation.descricao}</p> 
                                                         </div>
                                                     </li>
                                                 )
@@ -102,14 +102,14 @@ class ListaInteresse extends Component {
                                             
                                                 <li className="linha" value="{interesse.idInteresse}">
                                                     <div className="li_imagem">
-                                                        {/* <img src={"http://localhost:5000/Resources/Anuncio/" + interesse.foto} alt="imagem do produto" /> */}
+                                                        <img src={"http://localhost:5000/Resources/Anuncio/" + interesse.idAnuncioNavigation.foto} alt="imagem do produto" />
                                                     </div>
                                                     {console.log(interesse.foto)}
                                                     <div className="li_titulo">
-                                                        {/* <h3>{interesse.idAnuncioNavigation.idProdutoNavigation.nomeProduto}</h3> */}
+                                                        <h3>{interesse.idAnuncioNavigation.idProdutoNavigation.nomeProduto}</h3>
                                                     </div>
                                                     <div className="li_descricao">
-                                                        {/* <p>{interesse.idAnuncioNavigation.idProdutoNavigation.descricao}</p> */}
+                                                        <p>{interesse.idAnuncioNavigation.idProdutoNavigation.descricao}</p> 
                                                     </div>
                                                 </li>
                                             )

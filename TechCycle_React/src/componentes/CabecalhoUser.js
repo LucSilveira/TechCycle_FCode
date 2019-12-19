@@ -7,7 +7,7 @@ function Cabecalho(){
     return(
     <div>
     <header id="topo">
-        <a href="#"><img src={require("../assets/img/Logo.svg")} alt="Logotipo"/></a>
+        <Link to={'/home'}><img src={require("../assets/img/Logo.svg")} alt="Logotipo"/></Link>
         <nav>
             <ul>
                 <li><a href="#">Sobre Nós</a></li>
@@ -24,7 +24,7 @@ function Cabecalho(){
 
     <nav className="menu" id="principal">
         <div className="foto-perfil">
-            <img src="imagens/FotoPerfil.jpg" alt=""/>
+            <img src={require("../assets/img/julius.jpg")} alt=""/>
         </div>
         <ul className="menu-admin">
             <li><Link to={'/perfilusuario'}>
@@ -37,7 +37,8 @@ function Cabecalho(){
 
         <ul>
             <li><a href="" id="voltar"><i className="fas fa-arrow-left"></i></a></li>
-            <li><a href="index.html" className="botao-sair">Sair <span><i class="fas fa-sign-out-alt"></i></span></a></li>
+            <li><Link to={'/'} className="botao-sair" onClick={e => localStorage.removeItem('usiario-tech')}>
+                Sair <span><i class="fas fa-sign-out-alt"></i></span></Link></li>
         </ul>
     </nav>
     </div>

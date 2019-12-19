@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import '../assets/css/login.css'
 import Axios from 'axios';
 import{parseJwt} from '../services/auth';
+import {Link} from 'react-router-dom';
 
 
 class Login extends Component 
@@ -101,7 +102,9 @@ class Login extends Component
                           Entrar
                         </button>
                       }
-                    <button className="cadastrar_login botao" type="submit" value="Cadastrar">Cadastrar</button>
+                      
+                    <button className="cadastrar_login botao"><Link to={'/cadastrousuario'}>Cadastrar</Link></button>
+                    
                     </div>
                 </form>
             </section>

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import CabecalhoAdm from '../componentes/CabecalhoAdm';
 import Rodape from '../componentes/Rodape';
 import '../assets/css/cadastrousuario.css';
+import { Link } from 'react-router-dom'
 
 class CadastroUsuario extends Component {
     constructor() {
@@ -197,7 +198,7 @@ class CadastroUsuario extends Component {
                             <section className="usuario_row">
                                   
                                 <div className="botao_cad_usuario">     
-                                <button type="submit" className="btn1"><i className="far fa-arrow-alt-circle-up"></i>Solicitar cadastro</button>
+                                <button type="submit" className="btn1"><Link to={'/'}></Link><i className="far fa-arrow-alt-circle-up"></i>Solicitar cadastro</button>
                                 </div>
                                 
                             </section>

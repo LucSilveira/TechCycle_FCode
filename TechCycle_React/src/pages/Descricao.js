@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import Axios from 'axios';
-import CabecalhoAdm from '../componentes/CabecalhoAdm';
+import CabecalhoUser from '../componentes/CabecalhoUser';
 import Rodape from '../componentes/Rodape';
 import '../assets/css/descricao.css';
 import { parseJwt } from '../services/auth';
+import { Link } from 'react-router-dom';
 
 class Descricao extends Component {
     constructor(props) {
@@ -15,12 +16,13 @@ class Descricao extends Component {
                     descricao : ''
                 }
             },
-            idUsuario : parseJwt().idUsuario
+            idUsuario : parseJwt().IdUsuario
         }
         this.buscarAnuncio = this.buscarAnuncio.bind(this);
     }
 
     buscarAnuncio(){
+        // console.log(this.state.idUsuario)
         fetch('http://localhost:5000/api/anuncio/' + this.props.location.state.idAnuncio)
         .then(response => response.json())
         .then(data =>{
@@ -35,9 +37,11 @@ class Descricao extends Component {
     cadastrarInteresse(){
         let interesse = {
             idUsuario : parseInt(this.state.idUsuario),
-            idAnuncio : this.state.idAnuncio,
-            aprovado : 'agd'
+            idAnuncio : this.props.location.state.idAnuncio,
+            aprovado : 'Não'
         }
+
+        console.log(parseInt(this.state.idUsuario))
   
         fetch('http://localhost:5000/api/interesse',{
             method : 'POST',
@@ -56,10 +60,9 @@ class Descricao extends Component {
     
 
     render() { 
-        console.log(this.state.anuncio.idProduto)
         return (
             <div className="App">
-                <CabecalhoAdm />
+                <CabecalhoUser/>
                 <main>
                     <section className="anuncio">
                         <section className="titulo_descricao">
@@ -70,7 +73,8 @@ class Descricao extends Component {
                                             <section className="descricao">
                                                 <section className="anuncio_descritivo">
                                                     <section className="foto_principal">
-                                                        <img className="foto_exibicao" src={require('../assets/img/macp1.png')} alt="foto" />
+                                                        {/* <img className="foto_exibicao" src={require('../assets/img/macp1.png')} alt="foto" /> */}
+                                                        <img src={"http://localhost:5000/Resources/Anuncio/" + this.state.anuncio.foto}/>
                                                         <hr />
                                                         <section className="conteudo_descricao">
                                                             <h3>{this.state.anuncio.idProdutoNavigation.nomeProduto}</h3>
@@ -103,8 +107,8 @@ class Descricao extends Component {
                                                                 <p className="leve_descricao">Aparelho com alguns sinais uso, e com um bom desempenho;</p>
                                                             </section>
 
-                                                            <section className="quadro_avaliacao">
-                                                                <div className="box_avaliacao">
+                                                            <section className="quadro_avaliacao colorido">
+                                                                <div className="box_avaliacao colorido-borda">
                                                                     <p>ótimo</p>
                                                                     <p><span className="fa fa-star checked"></span><span
                                                                         className="fa fa-star checked"></span><span className="fa fa-star checked"></span></p>
@@ -114,8 +118,8 @@ class Descricao extends Component {
                                                         </section>
                                                     </div>
                                                     <div className="btn_descricao" onClick={e => {this.cadastrarInteresse()}}>
-                                                        <a href="#"><button><i className="fas fa-plus"></i> Adicionar a
-                                                        interessados</button></a>
+                                                        <Link to={'/listainteresse'}><button><i className="fas fa-plus"></i> Adicionar a
+                                                        interessados</button></Link>
                                                     </div>
                                                 </section>
                                             </section>

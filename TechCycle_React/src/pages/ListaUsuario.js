@@ -81,6 +81,7 @@ class ListaUsuario extends Component{
                                     <th>Foto</th>
                                     <th>Departamento</th>
                                     <th>Tipo Usuario</th>
+                                    <th>ação</th>
                                 </tr>
                             </thead>
 

@@ -15,6 +15,7 @@ namespace API_TechCycle.Repositorio
         {
             List<Interesse> listaInteresse= await context.Interesse.Include(us => us.IdUsuarioNavigation)
                                                                    .Include(an => an.IdAnuncioNavigation)
+                                                                   .Include(prd => prd.IdAnuncioNavigation.IdProdutoNavigation)
                                                                    .ToListAsync();
 
             foreach(var interesse in listaInteresse)
@@ -30,6 +31,7 @@ namespace API_TechCycle.Repositorio
         {
             Interesse interesse = await context.Interesse.Include(us => us.IdUsuarioNavigation)
                                                          .Include(an => an.IdAnuncioNavigation)
+                                                         .Include(prd => prd.IdAnuncioNavigation.IdProdutoNavigation)
                                                          .FirstOrDefaultAsync(inte => inte.IdInteresse == id);
             
             return interesse;
@@ -81,6 +83,7 @@ namespace API_TechCycle.Repositorio
             List<Interesse> listaInteresse = await context.Interesse.Where(inte => inte.Aprovado == aprovacao)
                                                                     .Include(us => us.IdUsuarioNavigation)
                                                                     .Include(anu => anu.IdAnuncioNavigation)
+                                                                    .Include(prd => prd.IdAnuncioNavigation.IdProdutoNavigation)
                                                                     .ToListAsync();
             
             foreach(var interesse in listaInteresse)
